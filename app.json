@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "movie-community",
+    "name": "MovieHive",
     "slug": "movie-community",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,41 +8,73 @@
     "scheme": "moviecommunity",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
+    
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#070707",
+      "dark": {
+        "backgroundColor": "#070707"
+      }
     },
+    
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/movie.png",
+        "backgroundImage": "./assets/images/moviebg.png",
+        "monochromeImage": "./assets/images/moviebg.png",
+        "backgroundColor": "#070707"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "softwareKeyboardLayoutMode": "resize",
+      "package": "com.yourname.moviehive"
     },
+    
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.moviehive",
+      "userInterfaceStyle": "automatic"
+    },
+    
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "MovieHive - Movie Community",
+      "shortName": "MovieHive",
+      "lang": "en",
+      "scope": "/",
+      "themeColor": "#070707",
+      "backgroundColor": "#070707"
     },
+
     "plugins": [
       "expo-router",
+      "expo-secure-store",
       [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#070707",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#070707"
           }
         }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
+      "reactCompiler": true,
+      "tsconfigPaths": true
+    },
+
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
     }
   }
 }

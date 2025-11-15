@@ -8,7 +8,6 @@
     "scheme": "moviecommunity",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
@@ -17,7 +16,6 @@
         "backgroundColor": "#070707"
       }
     },
-    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/movie.png",
@@ -30,13 +28,11 @@
       "softwareKeyboardLayoutMode": "resize",
       "package": "com.yourname.moviehive"
     },
-    
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.yourname.moviehive",
       "userInterfaceStyle": "automatic"
     },
-    
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png",
@@ -47,7 +43,6 @@
       "themeColor": "#070707",
       "backgroundColor": "#070707"
     },
-
     "plugins": [
       "expo-router",
       "expo-secure-store",
@@ -64,16 +59,15 @@
         }
       ]
     ],
-
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true,
       "tsconfigPaths": true
     },
-
     "extra": {
+      "router": {},
       "eas": {
-        "projectId": "your-project-id-here"
+        "projectId": "cb77fb56-602a-4e52-b6e0-af9358ba1846"
       }
     }
   }
